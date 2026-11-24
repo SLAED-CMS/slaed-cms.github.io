@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SLAED Video — обучающие видео SLAED CMS</title>
+<meta name="description" content="SLAED Video — внутренний инструмент проекта SLAED CMS для обучающих видео на YouTube-канале @slaed-cms.">
+<link rel="canonical" href="https://slaed-cms.github.io/">
+<style>
+@font-face { font-family: Magistral; src: url(https://slaed.net/templates/lite/assets/css/fonts/magistral.woff2) format('woff2'); font-display: swap; }
+:root {
+  --ground: #f4f8fb; --panel: #ffffff; --border: #d6e4ee; --text: #0b1d2c; --muted: #4f6b7e;
+  --link: #1a7fb8; --accent: #38a9de; --code: #eaf3f9;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --ground: #081824; --panel: #0b1d2c; --border: #1c4159; --text: #ecf8ff; --muted: #83a5ba;
+    --link: #6fc8ff; --accent: #5cbcea; --code: #10283b; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--ground); color: var(--text);
+  font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+main { max-width: 820px; margin: 0 auto; padding: 24px 16px 48px; }
+header { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between;
+  padding-bottom: 20px; border-bottom: 2px solid; border-image: linear-gradient(90deg, #38a9de, #72e6b0) 1; }
+.logo svg { height: 34px; width: auto; display: block; }
+nav { display: flex; flex-wrap: wrap; gap: 6px; }
+nav a { padding: 6px 12px; border: 1px solid var(--border); border-radius: 999px; color: var(--text);
+  text-decoration: none; font-size: 14px; }
+nav a:hover { border-color: var(--accent); }
+article { background: var(--panel); border: 1px solid var(--border); border-radius: 12px;
+  padding: 28px clamp(16px, 4vw, 40px); margin-top: 24px; scroll-margin-top: 16px; }
+.kicker { margin: 0; color: var(--accent); font: 600 13px/1 Magistral, system-ui, sans-serif;
+  letter-spacing: .12em; text-transform: uppercase; }
+h1 { margin: 8px 0 4px; font: 700 clamp(26px, 5vw, 34px)/1.2 Magistral, system-ui, sans-serif; }
+.meta { margin: 0 0 8px; color: var(--muted); font-size: 14px; }
+h2 { margin: 28px 0 8px; font: 600 19px/1.3 Magistral, system-ui, sans-serif; }
+p, ul { margin: 0 0 12px; }
+ul { padding-left: 22px; }
+li { margin-bottom: 6px; }
+a { color: var(--link); overflow-wrap: anywhere; }
+code { background: var(--code); padding: 1px 6px; border-radius: 6px; font-size: 14px; }
+footer { margin-top: 28px; color: var(--muted); font-size: 14px; text-align: center; }
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <a class="logo" href="https://slaed.net/" aria-label="SLAED CMS"><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW (Testversion) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="93.9814mm" height="28.7226mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 8832.5 2699.39"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil1 {fill:#144171}
+    .fil0 {fill:#26507C}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0" points="1096.94,1643.79 1096.8,1643.92 "/>
+  <path class="fil1" d="M3504.07 2344.78c-59.68,-26.68 -122.38,-55.54 -128.29,-62.42 -10.25,-11.92 -14.86,-26.24 -13.53,-42.32l0.43 -4.61c-0.67,-4.25 -0.84,-8.67 -0.43,-13.24 5.75,-65.9 20.03,-155.97 41.72,-261.85 130.14,-678.12 529.05,-1965.43 980.37,-1960.32l0 125.21 0 999.33 0 53.39c-229.35,-2.42 -445.36,367.76 -619.16,782.52 -43.76,111.57 -84.86,226.15 -122.81,338.16 -36.65,108.18 -52.43,84.58 -138.28,46.14zm1901.92 -109.4c0.7,-4.23 0.83,-8.64 0.43,-13.19 -5.75,-65.9 -20.03,-155.97 -41.72,-261.85 -130.15,-678.12 -529.05,-1965.43 -980.36,-1960.32l0 125.21 0 999.33 0 53.39c229.23,-2.42 445.14,367.38 618.89,781.89 43.87,111.77 85.05,226.57 123.08,338.79 36.66,108.18 52.43,84.58 138.3,46.14 59.66,-26.68 122.36,-55.54 128.28,-62.42 10.24,-11.92 14.83,-26.24 13.52,-42.32l-0.43 -4.66z"/>
+  <g id="_288206136">
+   <path class="fil1" d="M5950.4 1124.34l1049.21 0c36.58,0 66.49,29.91 66.49,66.49l0 238.91c0,36.58 -29.91,66.49 -66.49,66.49l-1049.21 0 0 250.3 0.02 28.63 -0.02 0c0,51.14 41.83,92.98 92.98,92.98 318.74,0 637.49,0 956.23,0 36.57,0 66.49,29.92 66.49,66.49l0 238.92c0,36.56 -29.91,66.49 -66.49,66.49 -349.73,0 -699.48,0 -1049.21,0 -204.55,0 -371.9,-167.35 -371.9,-371.9l0 -66.49 0 -55.11 0 -872.5 0 -55.11 0 -66.49c0,-204.55 167.35,-371.9 371.9,-371.9 349.73,0 699.48,0 1049.21,0 36.58,0 66.49,29.93 66.49,66.5l0 238.91c0,36.57 -29.92,66.49 -66.49,66.49 -318.75,0 -637.49,0 -956.23,0 -51.14,0 -92.98,41.83 -92.98,92.98l0.02 0 -0.02 28.63 0 250.3z"/>
+   <path class="fil1" d="M2045.45 447.03l0 1299.5 0.03 28.63 -0.03 0c0,51.14 41.83,92.98 92.98,92.98 318.75,0 637.49,0 956.23,0 36.57,0 66.49,29.92 66.49,66.49l0 238.92c0,36.56 -29.91,66.49 -66.49,66.49 -349.73,0 -699.48,0 -1049.21,0 -204.55,0 -371.9,-167.35 -371.9,-371.9l0 -66.49 0 -55.11 0 -1299.5c0,-36.59 29.92,-66.5 66.5,-66.5l238.91 0c36.58,0 66.49,29.91 66.49,66.5z"/>
+   <path class="fil1" d="M557.85 380.54l185.95 0 677.3 0c36.58,0 66.49,29.91 66.49,66.48l0 238.92c0,36.57 -29.91,66.49 -66.49,66.49l-677.3 0 -185.95 0 -92.99 0c-51.14,0 -92.98,41.83 -92.98,92.97l0.03 0c0,89.07 -18.82,116.8 73.71,152.23l91.52 35.03 734.53 287.77c155.13,77.07 215.92,165.84 215.92,408.25l0 139.46c0,204.55 -167.34,371.9 -371.89,371.9l-185.96 0 -185.94 0 -677.31 0c-36.58,0 -66.49,-29.92 -66.49,-66.48l0 -238.92c0,-36.57 29.91,-66.5 66.49,-66.5l677.31 0 185.94 0 92.99 0c51.14,0 92.98,-41.83 92.98,-92.97l-0.03 0c0,-89.06 18.82,-116.79 -73.71,-152.22l-91.52 -35.03 -734.52 -287.77c-155.14,-77.07 -215.93,-165.84 -215.93,-408.25l0 -139.47c0,-204.55 167.34,-371.89 371.89,-371.89l185.96 0z"/>
+   <path class="fil1" d="M8726.35 1966.49c-43.41,157.22 -188.07,273.55 -358.6,273.55l-810.29 0 -5.15 0 -233.77 0c-36.57,0 -66.5,-29.94 -66.5,-66.5l0 -1726.51c0,-36.55 29.93,-66.49 66.5,-66.49l233.77 0 5.15 0 810.29 0c170.53,0 315.19,116.32 358.6,273.54 141.53,409.39 141.53,903.03 0,1312.41zm-1102.4 -165.04c0,53.03 15.54,66.75 69.59,66.75l450.98 0.07c153.55,0.02 235.97,6.69 280.28,-204.78 47.7,-227.63 47.7,-478.77 0,-706.4 -44.31,-211.47 -126.73,-204.79 -280.28,-204.78l-450.98 0.07c-54.06,0 -69.59,13.71 -69.59,66.75l0 982.33z"/>
+   <path class="fil1" d="M3924.03 2685.57c-31.2,-11.44 -63.98,-23.81 -67.08,-26.76 -5.36,-5.11 -7.76,-11.25 -7.08,-18.15 21.04,-211.09 259.12,-962.73 534.45,-960.16l0 482.03c-150.12,-1.4 -289.31,264.58 -387.97,503.26 -19.17,46.36 -27.41,36.24 -72.32,19.77zm920.6 0c31.2,-11.44 63.98,-23.81 67.07,-26.76 5.37,-5.11 7.76,-11.25 7.08,-18.15 -21.04,-211.09 -259.11,-962.73 -534.45,-960.16l0 482.03c150.13,-1.4 289.32,264.58 387.98,503.26 19.16,46.36 27.41,36.24 72.32,19.77z"/>
+  </g>
+ </g>
+</svg></a>
+    <nav><a href="#ru" lang="ru">Русский</a><a href="#en" lang="en">English</a><a href="privacy.html">Конфиденциальность / Privacy</a><a href="terms.html">Условия / Terms</a></nav>
+  </header>
+
+  <article id="ru" lang="ru">
+    <p class="kicker">SLAED Video</p>
+    <h1>Обучающие видео SLAED CMS</h1>
+    <p>SLAED Video — внутренний инструмент проекта <a href="https://slaed.net">SLAED CMS</a>. Он записывает обучающие
+      видео по панели администратора, озвучивает и монтирует их, готовит субтитры, главы и обложку и публикует ролики
+      на YouTube-канале проекта <a href="https://www.youtube.com/@slaed-cms">@slaed-cms</a> через сервисы YouTube API.
+      Пользуются им только владелец канала и уполномоченные им менеджеры; публичным сервисом он не является.</p>
+    <ul>
+      <li><a href="privacy.html">Политика конфиденциальности</a></li>
+      <li><a href="terms.html">Условия использования</a></li>
+      <li>Связь: <a href="mailto:support@slaed.net">support@slaed.net</a></li>
+    </ul>
+  </article>
+
+  <article id="en" lang="en">
+    <p class="kicker">SLAED Video</p>
+    <h1>SLAED CMS tutorial videos</h1>
+    <p>SLAED Video is an internal tool of the <a href="https://slaed.net">SLAED CMS</a> project. It records tutorial videos
+      of the admin interface, narrates and edits them, prepares subtitles, chapters and a thumbnail, and publishes them to
+      the project's YouTube channel <a href="https://www.youtube.com/@slaed-cms">@slaed-cms</a> through YouTube API
+      Services. Only the channel owner and managers they authorize use it; it is not a public service.</p>
+    <ul>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms of Service</a></li>
+      <li>Contact: <a href="mailto:support@slaed.net">support@slaed.net</a></li>
+    </ul>
+  </article>
+
+  <footer>© 2005–2026 Eduard Laas · <a href="https://slaed.net">slaed.net</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></footer>
+</main>
+</body>
+</html>
